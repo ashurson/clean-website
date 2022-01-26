@@ -1,0 +1,79 @@
+
+body{
+    margin: 0%;
+}
+.top-bar ul, .top-bar a{
+    display: flex;
+    list-style: none;
+    gap: 8px;
+    color: azure;
+    text-decoration: none;
+}
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px ;
+    background-color: rgba(97, 123, 194, 0.76);
+    margin: ;
+}
+.blockI{
+    background-color: rgba(97, 123, 194, 0.76);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 600px;
+    color: azure;
+    padding: 70px 100px;
+}
+.blockI h2{
+    margin: 0%;
+    font-size: 32px;
+    color: rgb(60, 60, 65);
+}
+.sec2 p {
+    background-color: beige;
+    color: black;
+    padding: 90px 150px;
+}
+
+
+/* the second sections starts here*/
+
+.blockII{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.smaller-divs{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+
+
+
+/* the third section starts here */
+
+
+.blockIII{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;    
+}
+
+
+.blockIV{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
