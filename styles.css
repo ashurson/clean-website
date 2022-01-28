@@ -11,20 +11,23 @@ body{
 }
 .top-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px 20px ;
-    background-color: rgba(97, 123, 194, 0.76);
-    margin: ;
+    padding: 10px 50px ;
+    background-color: rgba(97, 123, 194, 0.76);   
 }
 .blockI{
     background-color: rgba(97, 123, 194, 0.76);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 600px;
+    height: 420px;
     color: azure;
     padding: 70px 100px;
+}
+.blockI img {
+    width: 350px;
+    border-radius: 9px;
 }
 .blockI h2{
     margin: 0%;
@@ -46,11 +49,20 @@ body{
     justify-content: center;
     align-items: center;
     height: 300px;
-}
+    padding: 60px;
+} 
 .smaller-divs{
     display: flex;
     gap: 50px;
-    text-align: center;
+    text-align: center;    
+    flex-wrap: wrap;
+}
+.smaller-divs img {
+   width: 250px;    
+   border-radius: 10px;
+}
+.smaller-divs p{
+    width: 250px;
 }
 
 
@@ -64,13 +76,28 @@ body{
     align-items: center;
     justify-content: center;
     height: 200px;    
+    background-color: rgb(233, 224, 224);
+    padding: 25px 50px ;
+    margin-bottom: 50px;
 }
-
-
 .blockIV{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin:25px 150px;
+    background-color: aqua;
+    border-radius: 8px;
+    padding: 60px 60px;
+}
+.blockIV h3, .blockIV p{
+    margin: 0%;
+}
+.blockIV button{
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    border-color: rgb(0, 183, 255);
+    background-color: rgb(187, 250, 229);
 }
 .footer{
     display: flex;
