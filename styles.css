@@ -1,46 +1,77 @@
+:root {
+    --main: #61648d;
+    --dark: #444558;
+    --light: rgb(179, 176, 206);
+    --lighter:rgb(182, 182, 182) ;
+    --darker: rgb(37, 36, 44) ;
+  }
+  
 
 body{
     margin: 0%;
-    background: linear-gradient(90deg, black, gray);
+    background-color: var(--lighter);   
+    display: flex;
+    flex-direction: column;
 }
 .top-bar ul, .top-bar a{
     display: flex;
     list-style: none;
-    gap: 8px;
-    color: azure;
+    gap: 12px;
+    color: var(--darker);
     text-decoration: none;
+}
+.top-bar button{
+    background: var(--light);
+    padding: 0.25rem 1rem;
+    border-radius: .25rem;
+    border: solid 2px var(--dark);
+    font-size: 1rem;
+}
+.top-bar h2{
+    font-size: 32px;
+    color: var(--lighter);    
 }
 .top-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 200px ;
+    padding: 10px 200px ;
     padding-right: 300px;
-    background-color: rgba(97, 123, 194, 0.76);   
+    background-color: var(--darker);   
     
 }
 .blockI{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 420px;
-    color: azure;
-    padding: 70px 100px;
-    background: linear-gradient(270deg,black, gray 900px);    
+    gap: 50px;
+    height: 350px;
+    padding: 50px 70px;
+    background-color: var(--darker);      
+}
+.blockI a{
+    text-decoration: none;
+    color: var(--light);
+    font-size: 20px;
+}
+.blockI button{
+    background-color: var(--main);
+    border: solid 1px var(--darker);
+    padding: 10px 20px ;
+    border-radius: 8px;
 }
 .blockI img {
-    width: 350px;
-    border-radius: 9px;
+    width: 250px;
+    border-radius: 8px;
 }
 .blockI h2{
     margin: 0%;
     font-size: 32px;
-    color: rgb(60, 60, 65);
+    color: var(--light);
 }
-.sec2 p {
-    background-color: beige;
-    color: black;
-    padding: 90px 150px;
+.sec1{
+    width: 400px;
+    color: rgb(116, 116, 138);
 }
 
 
@@ -51,8 +82,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    padding: 60px;
+    height: 400px;
+    padding: 60px 50px;
+    background-color: var(--light);
 } 
 .smaller-divs{
     display: flex;
@@ -60,11 +92,16 @@ body{
     text-align: center;    
     flex-wrap: wrap;
     color: gray;
+    background-color: var(--light);
 }
 .smaller-divs img {
    width: 250px;    
-   border-radius: 10px;
-   box-shadow: 5px 5px 5px 3px  rgb(49, 49, 49);
+   border-radius: 8px;
+}
+.pic{
+    background-color: var(--darker);
+    padding: 4px 4px;
+    border-radius: 8px;
 }
 .smaller-divs p{
     width: 250px;
@@ -82,35 +119,51 @@ body{
     justify-content: center;
     height: 200px;    
     background-color: rgb(233, 224, 224);
-    padding: 25px 50px ;
-    margin-bottom: 50px;
+    padding: 50px 100px ;
 }
+.blockIII .quote {
+    font-size: 25px;
+}
+.blockIII .author {
+    align-self: flex-end;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+
+
+
+
+
 .blockIV{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin:25px 150px;
-    background-color: aqua;
+    background-color: var(--darker);
     border-radius: 8px;
-    padding: 60px 60px;
-    border-color: solid 20px darkturquoise;
-    box-shadow: 10px 10px 10px 10px deepskyblue;
+    padding: 40px 60px;
 }
 .blockIV h3, .blockIV p{
     margin: 0%;
+    font-size: 24px;
+    color: var(--lighter);
 }
 .blockIV button{
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border-radius: 8px;
-    border-color: rgb(0, 183, 255);
-    background-color: rgb(187, 250, 229);
+    border-color: var(--dark);
+    background-color: var(--dark);
+    color: var(--lighter);
+    font-size: 24px;
 }
 
 .footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(122, 122, 122);
+    background-color: var(--darker);
+    color: var(--lighter);
     height: 50px;
 }
